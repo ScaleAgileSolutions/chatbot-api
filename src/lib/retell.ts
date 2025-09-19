@@ -1,6 +1,6 @@
 // src/lib/retell.ts
 
-const API_BASE = "https://api.retellai.com/v2";
+const API_BASE = "https://api.retellai.com";
 
 type Json = Record<string, any>;
 

@@ -9,4 +9,3 @@ CORS_ORIGINS = "http://localhost:4000,https://fermaglo-widget.pages.dev"
 [[kv_namespaces]]
 binding = "RATE_LIMIT_KV"
 id = "a05fab24739f4293b7b6f1b4bbde4032"
-# preview_id = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"

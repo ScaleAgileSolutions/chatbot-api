@@ -53,7 +53,10 @@ export const createRetellRoutes = () => {
         err?.message,
         err?.data || err
       );
-      return c.json({ error: "Internal Error", message: err }, 500);
+      return c.json(
+        { error: "Internal Error", message: JSON.stringify(err) },
+        500
+      );
     }
   });
 
@@ -77,7 +80,10 @@ export const createRetellRoutes = () => {
     } catch (err: any) {
       if (err?.issues)
         return c.json({ error: "Invalid request", details: err.issues }, 400);
-      return c.json({ error: "Internal Error", message: err }, 500);
+      return c.json(
+        { error: "Internal Error", message: JSON.stringify(err) },
+        500
+      );
     }
   });
 
@@ -98,7 +104,10 @@ export const createRetellRoutes = () => {
     } catch (err: any) {
       if (err?.issues)
         return c.json({ error: "Invalid request", details: err.issues }, 400);
-      return c.json({ error: "Internal Error", message: err }, 500);
+      return c.json(
+        { error: "Internal Error", message: JSON.stringify(err) },
+        500
+      );
     }
   });
 
